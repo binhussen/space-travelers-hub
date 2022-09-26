@@ -12,8 +12,9 @@ const Navbar = () => (
     <ul className="flex items-center list-none gap-8">
       <li>
         <NavLink
-          className="text-black text-lg no-underline hover:text-sky-500 hover:underline font-normal"
+          exact
           to="/"
+          className="text-black text-lg no-underline hover:text-sky-500 hover:underline font-normal"
         >
           Rockets
         </NavLink>

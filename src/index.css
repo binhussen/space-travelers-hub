@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .active {
+    @apply  opacity-10 font-bold;
+  }
+}
+
 *{
   margin: 0;
   padding: 0;
