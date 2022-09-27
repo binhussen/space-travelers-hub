@@ -5,12 +5,20 @@
 @tailwind utilities;
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 .active {
-  text-decoration: underline;
-  color: #0ea5e9;
+	text-decoration: underline;
+	color: #0ea5e9;
+}
+
+.max-w-45 {
+	max-width: 45vw;
+}
+
+.w-25vw {
+	width: 25vw;
 }
