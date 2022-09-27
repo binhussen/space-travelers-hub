@@ -21,8 +21,10 @@ const Mission = ({ mission }) => {
 };
 Mission.propTypes = {
   mission: PropTypes.shape({
+    id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
+    joined: PropTypes.string.isRequired,
   }).isRequired,
 };
 export default Mission;
