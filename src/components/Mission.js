@@ -1,15 +1,20 @@
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { toggleJoined } from '../redux/Missions/missions';
 
 const Mission = ({ mission }) => {
-  const { id, name, description, joined } = mission;
+  const {
+    id, name, description, joined,
+  } = mission;
+  const dispatch = useDispatch();
   return (
     <tr>
       <td>{name}</td>
       <td>{description}</td>
       <td>
         {!joined
-          ? <span >Not a member</span>
-          : <span >Member</span>}
+          ? <span>Not a member</span>
+          : <span>Member</span>}
       </td>
       <td>
         {!joined

@@ -1,5 +1,6 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
+
 const API_URL = 'https://api.spacexdata.com/v3';
 const API_MISSION = `${API_URL}/missions`;
 const GET_MISSIONS = 'space/missions/GET_MISSIONS';
@@ -30,6 +31,6 @@ export const getMissions = createAsyncThunk(GET_MISSIONS, async () => {
   return missions;
 });
 export const toggleJoin = (id) => ({
-    type: TOGGLE_MISSION,
-    payload: id,
-  });
+  type: TOGGLE_MISSION,
+  payload: id,
+});
