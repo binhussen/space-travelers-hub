@@ -6,7 +6,9 @@ const Profile = () => {
   const rockets = useSelector((state) => state.rockets).filter(
     (rocket) => rocket.reserved,
   );
-
+  const missions = useSelector((state) => state.missions).filter(
+    (mission) => mission.joined,
+  );
   return (
     <section className="flex items-start justify-center gap-12 flex-wrap">
       <h2>My Rockets</h2>
