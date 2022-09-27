@@ -20,7 +20,7 @@ const Mission = ({ mission }) => {
   );
 };
 Mission.propTypes = {
-  rocket: PropTypes.shape({
+  mission: PropTypes.shape({
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
