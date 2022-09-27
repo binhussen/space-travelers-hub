@@ -29,3 +29,7 @@ export const getMissions = createAsyncThunk(GET_MISSIONS, async () => {
   }));
   return missions;
 });
+export const toggleJoin = (id) => ({
+    type: TOGGLE_MISSION,
+    payload: id,
+  });
