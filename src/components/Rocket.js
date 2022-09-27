@@ -24,7 +24,7 @@ const Rocket = ({ rocket }) => {
         <p className="mt-2 text-lg max-w-45 ">{description}</p>
         {reserved ? (
           <button
-            className="mt-6 px-3 py-2 bg-red-500 text-white bottom-0 rounded-md cursor-pointer"
+            className="mt-6 px-3 py-2 border border-red-500 text-red-500 bottom-0 rounded-md cursor-pointer"
             type="button"
             onClick={() => dispatch(toggleReserved(id))}
           >

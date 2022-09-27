@@ -10,7 +10,9 @@ const Rockets = () => {
   const rockets = useSelector((state) => state.rockets);
 
   useEffect(() => {
-    dispatch(getRockets());
+    if (rockets.length === 0) {
+      dispatch(getRockets());
+    }
   }, []);
   return (
     <section className="flex items-center flex-col mt-5">
