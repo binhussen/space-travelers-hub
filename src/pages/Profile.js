@@ -27,6 +27,22 @@ const Profile = () => {
               </td>
             </tr>
           )}
+          <h2>My Missions</h2>
+      <table className="my-6 border-collapse w-25vw">
+        <tbody>
+          {missions.length > 0 ? (
+            missions.map((mission) => (
+              <tr key={mission.id}>
+                <td className="border-gray-900 p-3">{mission.name}</td>
+              </tr>
+            ))
+          ) : (
+            <tr>
+              <td className="border-gray-900 p-3">
+                No Mission joined Available
+              </td>
+            </tr>
+          )}
         </tbody>
       </table>
     </section>
