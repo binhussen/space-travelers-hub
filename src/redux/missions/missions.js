@@ -17,7 +17,7 @@ export const getMissions = createAsyncThunk(GET_MISSIONS, async () => {
   const missions = response.data.map((mission) => ({
     name: mission.mission_name,
     id: mission.mission_id,
-    description: mission.description
+    description: mission.description,
   }));
   return missions;
 });

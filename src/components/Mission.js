@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+
 const Mission = ({ mission }) => {
   const { id, name, description } = mission;
   return (
