@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 const Mission = ({ mission }) => {
-  const { name, description } = mission;
+  const { id, name, description, joined } = mission;
   return (
     <tr>
       <td>{name}</td>
