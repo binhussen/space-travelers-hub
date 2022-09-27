@@ -5,16 +5,16 @@ const Mission = ({ mission }) => {
   return (
     <tr>
       <td>{name}</td>
-      <thead>{description}</thead>
+      <td>{description}</td>
       <td>
-        <span>Not a member</span>
+        {!joined
+          ? <span >Not a member</span>
+          : <span >Member</span>}
       </td>
       <td>
-        <button
-          type="button"
-        >
-          Join Mission
-        </button>
+        {!joined
+          ? <button type="button" onClick={() => dispatch(toggleJoined(id))}>Join Mission</button>
+          : <button type="button" onClick={() => dispatch(toggleJoined(id))}>Abort Mission</button>}
       </td>
     </tr>
   );
