@@ -12,8 +12,8 @@ const initialRockets = [];
 
 export default function rocketReducer(state = initialRockets, action) {
   switch (action.type) {
-    case GET_ROCKETS:
-      return action.rockets;
+    case `${GET_ROCKETS}/fulfilled`:
+      return [...state, ...action.payload];
     default:
       return state;
   }
