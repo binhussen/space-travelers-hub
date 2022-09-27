@@ -1,15 +1,16 @@
+/** @format */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .active {
-    @apply  opacity-10 font-bold;
-  }
-}
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.active {
+  text-decoration: underline;
+  color: #0ea5e9;
 }

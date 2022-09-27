@@ -12,25 +12,25 @@ const Navbar = () => (
     <ul className="flex items-center list-none gap-8">
       <li>
         <NavLink
-          exact
           to="/"
-          className="text-black text-lg no-underline hover:text-sky-500 hover:underline font-normal"
+          className="text-lg hover:text-sky-500 hover:underline"
+          end
         >
           Rockets
         </NavLink>
       </li>
       <li>
         <NavLink
-          className="text-black text-lg no-underline hover:text-sky-500 hover:underline font-normal"
           to="/missions"
+          className="text-lg hover:text-sky-500 hover:underline"
         >
           Missions
         </NavLink>
       </li>
       <li>
         <NavLink
-          className="text-black text-lg no-underline hover:text-sky-500 hover:underline font-normal"
           to="/profile"
+          className="text-lg hover:text-sky-500 hover:underline"
         >
           My Profile
         </NavLink>
