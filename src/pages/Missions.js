@@ -12,13 +12,15 @@ const Missions = () => {
     }
   }, []);
   return (
-    <section>
-      <table>
+    <section className="flex justify-center items-center w-80vw my-5vh mx-auto">
+      <table className="border-collapse rounded text-base w-full table-auto border">
         <thead>
           <tr>
-            <th>Mission</th>
-            <th>Description</th>
-            <th colSpan="2">Status</th>
+            <th className="text-lg text-center border p-3">Mission</th>
+            <th className="text-lg text-center border p-3">Description</th>
+            <th className="text-lg text-center border p-3" colSpan="2">
+              Status
+            </th>
           </tr>
         </thead>
         <tbody>

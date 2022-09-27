@@ -10,11 +10,10 @@ const missionReducer = (state = [], action) => {
     case `${GET_MISSIONS}/fulfilled`:
       return [...state, ...action.payload];
     case TOGGLE_MISSION: {
-      const newState = state.map((mission) => {
-        if (mission.id !== action.id) return mission;
-        return { ...mission, joined: !mission.joined };
+      return state.map((mission) => {
+        if (mission.id === action.payload) return { ...mission, joined: !mission.joined };
+        return mission;
       });
-      return newState;
     }
     default:
       return state;
@@ -34,3 +33,5 @@ export const toggleJoin = (id) => ({
   type: TOGGLE_MISSION,
   payload: id,
 });
+
+export default missionReducer;

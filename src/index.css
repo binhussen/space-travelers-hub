@@ -22,3 +22,12 @@
 .w-25vw {
   width: 25vw;
 }
+
+.w-80vw {
+  width: 80vw;
+}
+
+.my-5vh {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
