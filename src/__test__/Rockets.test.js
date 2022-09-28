@@ -14,8 +14,7 @@ const initialState = {
       id: 'falcon1',
       name: 'Falcon 1',
       reserved: false,
-      description:
-				'The Falcon 1 was an expendable launch system privately developed and manufactured by SpaceX during 2006-2009. On 28 September 2008, Falcon 1 became the first privately-developed liquid-fuel launch vehicle to go into orbit around the Earth.',
+      description: 'The Falcon 1 was an expendable launch system privately developed and manufactured by SpaceX during 2006-2009. On 28 September 2008, Falcon 1 became the first privately-developed liquid-fuel launch vehicle to go into orbit around the Earth.',
       image: 'image--rocket1.jpg',
     },
   ],

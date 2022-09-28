@@ -16,11 +16,11 @@ const Profile = () => {
         <table className="my-6 border-collapse w-25vw">
           <tbody>
             {rockets.length > 0 ? (
-						  rockets.map((rocket) => (
-  <tr key={rocket.id}>
-    <td className="p-3 border">{rocket.name}</td>
-  </tr>
-						  ))
+              rockets.map((rocket) => (
+                <tr key={rocket.id}>
+                  <td className="p-3 border">{rocket.name}</td>
+                </tr>
+              ))
             ) : (
               <tr>
                 <td className="p-3 border">No Rockets Reserved Available</td>
@@ -35,11 +35,11 @@ const Profile = () => {
         <table className="my-6 border-collapse w-25vw border">
           <tbody>
             {missions.length > 0 ? (
-						  missions.map((mission) => (
-  <tr key={mission.id}>
-    <td className="p-3 border">{mission.name}</td>
-  </tr>
-						  ))
+              missions.map((mission) => (
+                <tr key={mission.id}>
+                  <td className="p-3 border">{mission.name}</td>
+                </tr>
+              ))
             ) : (
               <tr>
                 <td className="border-gray-900 p-3">
